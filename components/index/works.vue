@@ -1,12 +1,12 @@
 <template>
-  <div class="works">
+  <div class="works mb-5">
     <my-title :title="title" :icon="icon"/>
 
-    <v-layout row wrap align-center justify-space-around fill-height class="mb-5">
+    <v-layout row wrap align-center justify-space-around fill-height>
       <div class="card-group">
         <ul>
           <li v-for="item in items" :key="item.title">
-            <card :src="item.src" :title="item.title" :text="item.text"/>
+            <card :item="item"/>
           </li>
         </ul>
       </div>
@@ -31,17 +31,65 @@ export default {
       items: [
         {
           src: 'https://cdn.vuetifyjs.com/images/cards/docks.jpg',
+          overview: 'overview',
           title: 'Java',
-          text:
-            '学部2年次の必修科目で1年程度触れた後、3年次の演習科目でAndroidアプリ製作時に使用しました。' +
-            '今後のAndroidアプリの開発にはKotlinを使用する予定です。'
+          date: '2019/02/21',
+          tags: [
+            {
+              color: 'orange',
+              textColor: 'white',
+              title: 'PHP'
+            },
+            {
+              color: 'orange',
+              textColor: 'white',
+              title: 'PPP'
+            }
+          ],
+          text: 'hogehoge。' + 'hogehogehogehogehoge。',
+          links: [
+            {
+              color: 'orange',
+              title: 'HP',
+              url: 'hogehoge.jp'
+            },
+            {
+              color: 'orange',
+              title: 'PPAP',
+              url: 'hogehoge.jp'
+            }
+          ]
         },
         {
           src: 'https://cdn.vuetifyjs.com/images/cards/docks.jpg',
-          title: 'Python',
-          text:
-            '使用可能なプログラミング言語の中で一番得意な言語です。' +
-            '本ポートフォリオ作成時には2年ほど使用しており、卒業研究のプログラムにも使われています。'
+          overview: 'overview',
+          title: 'PHP',
+          date: '2019/02/21',
+          tags: [
+            {
+              color: 'orange',
+              textColor: 'white',
+              title: 'PHP'
+            },
+            {
+              color: 'orange',
+              textColor: 'white',
+              title: 'PPP'
+            }
+          ],
+          text: 'hogehoge。' + 'hogehogehogehogehoge。',
+          links: [
+            {
+              color: 'orange',
+              title: 'HP',
+              url: 'https://cdn.vuetifyjs.com/images/cards/docks.jpg'
+            },
+            {
+              color: 'orange',
+              title: 'PPAP',
+              url: 'hogehoge.jp'
+            }
+          ]
         }
       ]
     }

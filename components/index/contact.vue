@@ -1,5 +1,5 @@
 <template>
-  <div class="contact">
+  <div class="contact mb-5">
     <my-title :title="title" :icon="icon"/>
   </div>
 </template>

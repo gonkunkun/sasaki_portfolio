@@ -1,5 +1,5 @@
 <template>
-  <div class="aboutme">
+  <div class="aboutme mb-5">
     <my-title :title="title" :icon="icon"/>
   </div>
 </template>

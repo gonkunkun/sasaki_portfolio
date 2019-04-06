@@ -1,8 +1,8 @@
 <template>
-  <div class="skill">
+  <div class="skill mb-5">
     <my-title :title="title" :icon="icon"/>
 
-    <v-layout row wrap align-center justify-space-around fill-height class="mb-5">
+    <v-layout row wrap align-center justify-space-around fill-height>
       <v-flex xs6 sm3 md2 class="pa-1">
         <v-card>
           <v-img
