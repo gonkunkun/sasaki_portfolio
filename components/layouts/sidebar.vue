@@ -3,6 +3,7 @@
     v-model="$store.state.default.drawer"
     :mini-variant="$store.state.default.miniVariant"
     :clipped="$store.state.default.clipped"
+    disable-resize-watcher
     fixed
     app
   >

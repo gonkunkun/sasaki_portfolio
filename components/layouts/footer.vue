@@ -3,7 +3,7 @@
     <v-card class="flex" flat tile>
       <v-card-actions class="grey darken-3 justify-center">
         &copy;
-        <strong>Sasaki portfolio</strong>
+        <strong class="mx-1">Sasaki Yuta</strong>
         2018
       </v-card-actions>
     </v-card>
