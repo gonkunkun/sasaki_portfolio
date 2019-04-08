@@ -26,14 +26,24 @@ export default {
     return {
       items: [
         {
-          icon: 'apps',
-          title: 'Welcome',
-          to: '/'
+          icon: 'face',
+          title: 'About me',
+          to: '#about'
         },
         {
-          icon: 'bubble_chart',
-          title: 'Inspire',
-          to: '/inspire'
+          icon: 'build',
+          title: 'My skill set',
+          to: '#skill'
+        },
+        {
+          icon: 'create',
+          title: 'Works',
+          to: '#works'
+        },
+        {
+          icon: 'contacts',
+          title: 'SNS/Contact',
+          to: '#contacts'
         }
       ]
     }
