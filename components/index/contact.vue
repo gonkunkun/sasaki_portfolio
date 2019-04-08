@@ -1,19 +1,25 @@
 <template>
-  <div class="contact mb-5">
+  <div class="contact">
     <my-title :title="title" :icon="icon"/>
     <v-flex xs12 sm12 md12 class="ma-1">
       <v-layout text-md-center text-sm-center text-xs-center align-center justify-center row wrap>
         <v-flex xs2 sm2 md2>
-          <i class="fab fa-github fa-fw fa-3x"/>
+          <a href="https://github.com/gonkunkun" target="_blank">
+            <i class="fab fa-github fa-fw fa-3x"/>
+          </a>
         </v-flex>
-        <v-flex xs2 sm2 md2>
+        <!-- <v-flex xs2 sm2 md2>
           <i class="fab fa-twitter fa-fw fa-3x twitter"/>
+        </v-flex>-->
+        <v-flex xs2 sm2 md2>
+          <a href="https://qiita.com/gogogonkun" target="_blank">
+            <img class="icon-image" src="~/assets/Qiita.png">
+          </a>
         </v-flex>
         <v-flex xs2 sm2 md2>
-          <img class="icon-image" src="~/assets/Qiita.png">
-        </v-flex>
-        <v-flex xs2 sm2 md2>
-          <img class="icon-image" src="~/assets/wantedly.svg">
+          <a href="https://www.wantedly.com/users/89974724" target="_blank">
+            <img class="icon-image" src="~/assets/wantedly.svg">
+          </a>
         </v-flex>
         <v-flex xs12 sm12 md12>
           <div class="text-xs-center">
@@ -50,6 +56,6 @@ export default {
   height: 40px;
 }
 .twitter {
-  color: #1da1f2;
+  /* color: #1da1f2; */
 }
 </style>
