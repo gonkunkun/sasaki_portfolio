@@ -1,5 +1,5 @@
 <template>
-  <div class="contact">
+  <div id="contacts" class="contact">
     <my-title :title="title" :icon="icon"/>
     <v-flex xs12 sm12 md12 class="ma-1">
       <v-layout text-md-center text-sm-center text-xs-center align-center justify-center row wrap>

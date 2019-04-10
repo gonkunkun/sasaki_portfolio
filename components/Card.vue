@@ -13,7 +13,7 @@
       </v-img>
       <v-card-title>
         <div>
-          <div class="headline">{{ item.title }}</div>
+          <div class="title mt-1">{{ item.title }}</div>
           <v-layout row wrap>
             <v-flex xs3>
               <span class="grey--text caption mr-3">{{ item.date }}</span>
@@ -30,10 +30,10 @@
             </v-flex>
           </v-layout>
           <v-divider light></v-divider>
-          <span>{{ item.text }}</span>
+          <div class="mt-1">{{ item.text }}</div>
         </div>
       </v-card-title>
-      <v-card-actions>
+      <v-card-actions class="pt-0">
         <v-layout row wrap>
           <v-flex xs12>
             <v-btn
@@ -42,7 +42,7 @@
               small
               :color="link.color"
               dark
-              class="mx-1 pa-0"
+              class="mx-1"
               :href="link.url"
               target="_blank"
             >{{ link.title }}</v-btn>

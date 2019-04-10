@@ -1,5 +1,5 @@
 <template>
-  <div class="skill mb-5">
+  <div id="skill" class="skill mb-5">
     <my-title :title="title" :icon="icon"/>
 
     <v-container fluid class="py-1">
@@ -134,7 +134,7 @@
               <div class="subheading">Ruby on Rails</div>
             </v-flex>
             <v-flex>
-              <div class="caption">勉強中ですが個人アプリ開発に使用</div>
+              <div class="caption">勉強中。個人アプリ開発に使用</div>
             </v-flex>
           </v-flex>
         </v-layout>

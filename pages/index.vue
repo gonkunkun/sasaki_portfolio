@@ -1,10 +1,10 @@
 <template>
   <v-content>
     <v-container fluid>
-      <about-me id="about"/>
-      <skill id="skill"/>
-      <works id="works"/>
-      <contact id="contacts"/>
+      <about-me/>
+      <skill/>
+      <works/>
+      <contact/>
     </v-container>
   </v-content>
 </template>

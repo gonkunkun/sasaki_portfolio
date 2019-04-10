@@ -28,7 +28,7 @@ export default {
         {
           icon: 'face',
           title: 'About me',
-          to: '#about'
+          to: "{ name: 'id', params: { id: about }}"
         },
         {
           icon: 'build',
