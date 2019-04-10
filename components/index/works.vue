@@ -148,7 +148,7 @@ export default {
             {
               color: 'blue darken-1',
               title: 'サイト',
-              url: 'http://localhost:3000/#contacts'
+              url: 'https://sasakiportfolio-2c22c.firebaseapp.com'
             },
             {
               color: 'blue darken-1',
