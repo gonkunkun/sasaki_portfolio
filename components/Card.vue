@@ -42,7 +42,7 @@
               small
               :color="link.color"
               dark
-              class="mx-1"
+              class="mx-1 pa-1 ma-1"
               :href="link.url"
               target="_blank"
             >{{ link.title }}</v-btn>
