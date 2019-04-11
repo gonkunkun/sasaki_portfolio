@@ -4,7 +4,7 @@
 
     <v-layout row wrap align-center justify-space-around fill-height>
       <div class="card-group">
-        <ul>
+        <ul class="pa-0">
           <li v-for="item in items" :key="item.title">
             <card :item="item"/>
           </li>
@@ -154,6 +154,66 @@ export default {
               color: 'blue darken-1',
               title: 'GitHub',
               url: 'https://github.com/gonkunkun/sasaki_portfolio'
+            }
+          ]
+        },
+        {
+          src: '/perches.png',
+          overview: '',
+          title: '社内プログラミングサークル',
+          date: '2019/02/11',
+          tags: [
+            {
+              color: 'purple darken-1',
+              textColor: 'white',
+              title: '勉強'
+            }
+          ],
+          text:
+            'コーディング好き同士で集まって勝手に作りました。サークル名はひよっこエンジニアが空へ羽ばたくための止まり木（遊び場）にしたいという思いで名付けました。会社の同期10名程度がゆるく楽しんでいます。',
+          links: [
+            {
+              color: 'blue darken-1',
+              title: 'サイト',
+              url: 'https://perches-team.github.io/perches/'
+            }
+          ]
+        },
+        {
+          src: '/pytin.png',
+          overview: '',
+          title: '人々の暗黙知を共有する知識投稿アプリ',
+          date: '2018/09/17',
+          tags: [
+            {
+              color: 'green',
+              textColor: 'white',
+              title: '開発'
+            },
+            {
+              color: 'orange',
+              textColor: 'white',
+              title: 'Django'
+            },
+            {
+              color: 'orange',
+              textColor: 'white',
+              title: 'MySQL'
+            }
+          ],
+          text:
+            'Djangoアプリです。普段語り合うことが少ない暗黙知を投稿して、共有できるサービスです。言い換えるならばQiitaのエロ版です。私の強い思いでアダルトなサービスになりました。以下は同期の紹介ツイートです。',
+          links: [
+            {
+              color: 'blue darken-1',
+              title: '紹介ツイート',
+              url:
+                'https://twitter.com/tachibanayu24/status/1041700568492793856'
+            },
+            {
+              color: 'blue darken-1',
+              title: 'GitHub',
+              url: 'https://github.com/tachibanayu24/py_slash_tinps'
             }
           ]
         }
