@@ -40,7 +40,7 @@ export default {
       },
       { property: 'og:image', content: '/portfolio.png' },
       { property: 'fb:app_id', content: '425218088280876' },
-      { property: 'twitter:card', content: '佐々木優太のポートフォリオです。' },
+      { property: 'twitter:card', content: 'summary' },
       {
         property: 'twitter:site',
         content: 'https://sasakiportfolio-2c22c.firebaseapp.com/'
