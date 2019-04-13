@@ -7,13 +7,13 @@ jobs:
       - checkout # ソースコードのチェックアウト
       - run: # 順に実行したいコマンドとコマンドに名前をつけます
           name: npm install
-          command: npm install
+          command: sudo npm install
       - run:
           name: lint check
-          command: npm run install -g eslint
+          command: sudo npm run install -g eslint
       - run:
           name: build
-          command: npm run build
+          command: sudo npm run build
       - run:
           name: sudo deploy to Firebase Hosting
           command: sudo ./node_modules/.bin/firebase deploy --token=$FIREBASE_TOKEN --project sasaki-portfolio
