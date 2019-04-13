@@ -15,7 +15,7 @@ jobs:
           name: build
           command: npm run build
       - run:
-          name: deploy to Firebase Hosting
+          name: sudo deploy to Firebase Hosting
           command: ./node_modules/.bin/firebase deploy --token=$FIREBASE_TOKEN --project sasaki-portfolio
 
 workflows:
