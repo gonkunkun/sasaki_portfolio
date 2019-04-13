@@ -9,12 +9,14 @@ jobs:
           name: npm install
           command: npm install
       - run:
-          name: lint
+          name: lint check
           command: |
-            mkdir -p /tmp/test-reports/eslint
-            node_modules/.bin/eslint . --format junit --output-file /tmp/test-reports/eslint/results.xml
+          mkdir -p ./reports
+          npx eslint ./app/ --format junit --output-file ./reports/eslint.xml
       - store_test_results:
-          path: /tmp/test-reports
+          path: ./reports
+      - store_artifacts:
+          path: ./reports
       - run:
           name: build
           command: npm run build
