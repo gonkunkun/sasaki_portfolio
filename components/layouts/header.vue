@@ -4,7 +4,9 @@
     <!-- <v-btn icon @click.stop="$store.commit('default/tglMiniVariant')">
       <v-icon>{{ `chevron_${$store.state.default.miniVariant ? 'right' : 'left'}` }}</v-icon>
     </v-btn>-->
-    <v-toolbar-title v-text="$store.state.default.title"/>
+    <h1>
+      <v-toolbar-title v-text="$store.state.default.title"/>
+    </h1>
     <v-spacer/>
     <!-- <v-btn icon @click.stop="$store.commit('default/tglRightDrawer')">
         <v-icon>menu</v-icon>

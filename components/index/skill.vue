@@ -1,6 +1,8 @@
 <template>
   <div id="skill" class="skill mb-5">
-    <my-title :title="title" :icon="icon"/>
+    <h2>
+      <my-title :title="title" :icon="icon"/>
+    </h2>
 
     <v-container fluid class="py-1">
       <v-card class="pa-1">

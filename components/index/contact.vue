@@ -1,6 +1,8 @@
 <template>
   <div id="contacts" class="contact">
-    <my-title :title="title" :icon="icon"/>
+    <h2>
+      <my-title :title="title" :icon="icon"/>
+    </h2>
     <v-flex xs12 sm12 md12 class="ma-1">
       <v-layout text-md-center text-sm-center text-xs-center align-center justify-center row wrap>
         <v-flex xs2 sm2 md2>

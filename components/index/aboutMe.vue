@@ -1,6 +1,8 @@
 <template>
   <div id="about" class="aboutme mb-2">
-    <my-title :title="title" :icon="icon"/>
+    <h2>
+      <my-title :title="title" :icon="icon"/>
+    </h2>
 
     <v-layout row wrap align-center justify-center fill-height>
       <v-flex xs12 sm5 md4 align-center justify-center layout class="pa-2">

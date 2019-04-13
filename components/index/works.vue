@@ -1,6 +1,8 @@
 <template>
   <div id="works" class="works mb-5">
-    <my-title :title="title" :icon="icon"/>
+    <h2>
+      <my-title :title="title" :icon="icon"/>
+    </h2>
 
     <v-layout row wrap align-center justify-space-around fill-height>
       <div class="card-group">
