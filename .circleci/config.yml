@@ -18,11 +18,11 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       - run:
-          name: 'Build Client Code(react-scripts によるビルド実行)'
+          name: 'Build Client Code'
           command: npm run build
       - run:
           name: deploy to Firebase Hosting
-          command: ./node_modules/.bin/firebase deploy --token=$FIREBASE_TOKEN --project sasaki-portfolio
+          command: firebase deploy --token=$FIREBASE_TOKEN --project sasaki-portfolio
 
 workflows:
   version: 2
