@@ -7,7 +7,7 @@ jobs:
       - checkout # ソースコードのチェックアウト
       - run: # 順に実行したいコマンドとコマンドに名前をつけます
           name: npm install
-          command: pm install
+          command: npm install
       - run:
           name: 'Install Dependecies'
           command: npm install --save-dev firebase-tools
