@@ -2,7 +2,7 @@
   <!-- <div class="my-card"> -->
   <v-flex xs12 sm6 md4 class="pa-3">
     <v-card width="300px" aspect-radio="2.75">
-      <v-img class="white--text" height="200px" :src="item.src">
+      <v-img class="white--text" height="200px" :src="item.src" :alt="item.alt">
         <v-container fill-height fluid>
           <v-layout fill-height>
             <v-flex xs12 align-end flexbox>

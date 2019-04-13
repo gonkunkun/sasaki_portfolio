@@ -31,6 +31,7 @@ export default {
       items: [
         {
           src: '/amateras.png',
+          alt: '気象予測情報システム-amateras',
           overview: '',
           title: '気象予測情報の配信システムの開発',
           date: '2018/02/10',
@@ -74,6 +75,7 @@ export default {
         },
         {
           src: '/movhis.png',
+          alt: '動画の閲覧履歴をサムネイル付きで表示するアプリ',
           overview: '',
           title: 'Chrome拡張機能 動画閲覧履歴Viewerの開発',
           date: '2018/12/25',
@@ -122,6 +124,7 @@ export default {
         },
         {
           src: '/portfolio.png',
+          alt: '佐々木のポートフォリオ画像',
           overview: '',
           title: 'Nuxtでポートフォリオ作成',
           date: '2019/04/10',
@@ -159,6 +162,7 @@ export default {
         },
         {
           src: '/perches.png',
+          alt: 'サークルPerchesロゴ',
           overview: '',
           title: '社内プログラミングサークル',
           date: '2019/02/11',
@@ -181,6 +185,7 @@ export default {
         },
         {
           src: '/pytin.png',
+          alt: 'エロ版Qiitaイメージ画面',
           overview: '',
           title: '人々の暗黙知を共有する知識投稿アプリ',
           date: '2018/09/17',

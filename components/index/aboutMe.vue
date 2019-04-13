@@ -5,7 +5,7 @@
     <v-layout row wrap align-center justify-center fill-height>
       <v-flex xs12 sm5 md4 align-center justify-center layout class="pa-2">
         <v-avatar :tile="tile" size="200" color="grey lighten-4">
-          <img src="~/assets/me4.jpg" alt="avatar">
+          <img src="~/assets/me4.jpg" alt="佐々木の写真">
         </v-avatar>
       </v-flex>
       <v-flex xs10 sm7 md8 offset-xs1 offset-sm0 offset-md0 class="pa-2">
