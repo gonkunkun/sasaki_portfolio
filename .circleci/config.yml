@@ -24,9 +24,10 @@ jobs:
           command: npm run build
       - run: # 順に実行したいコマンドとコマンドに名前をつけます
           name: npm install
-          command: \
-            cd functions
-            npm install
+          command: cd functions
+      - run: # 順に実行したいコマンドとコマンドに名前をつけます
+          name: npm install
+          command: npm install
       - run:
           name: deploy to Firebase Hosting
           command: ./node_modules/.bin/firebase deploy --token=$FIREBASE_TOKEN --project sasaki-portfolio
