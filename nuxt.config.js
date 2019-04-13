@@ -38,7 +38,10 @@ export default {
         property: 'og:url',
         content: 'https://sasakiportfolio-2c22c.firebaseapp.com/'
       },
-      { property: 'og:image', content: '/portfolio.png' },
+      {
+        property: 'og:image',
+        content: 'https://sasakiportfolio-2c22c.firebaseapp.com/portfolio.png'
+      },
       { property: 'fb:app_id', content: '425218088280876' },
       { property: 'twitter:card', content: 'summary' },
       {
@@ -47,7 +50,7 @@ export default {
       },
       {
         property: 'twitter:image',
-        content: '/portfolio.png'
+        content: 'https://sasakiportfolio-2c22c.firebaseapp.com/portfolio.png'
       }
     ],
     link: [
