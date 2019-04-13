@@ -12,6 +12,10 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      {
+        name: 'google-site-verification',
+        content: 'CifRO1Y4LDsCOt5Gqi5irV7Dryey1Z0jDFSjdp_zCJw'
+      },
       { hid: 'description', name: 'description', content: pkg.description }
     ],
     link: [
