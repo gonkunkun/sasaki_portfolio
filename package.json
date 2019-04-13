@@ -8,8 +8,7 @@
     "dev": "nuxt",
     "build": "nuxt build --no-lock",
     "start": "nuxt start",
-    "generate": "nuxt generate",
-    "precommit": "npm run lint"
+    "generate": "nuxt generate"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free-webfonts": "^1.0.9",
