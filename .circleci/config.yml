@@ -12,6 +12,9 @@ jobs:
           name: install es lint
           command: sudo npm install -g eslint
       - run:
+          name: install es lint promise
+          command: sudo npm install eslint-plugin-promise@latest --save-dev
+      - run:
           name: build
           command: npm run build
       - run:
