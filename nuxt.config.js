@@ -8,6 +8,9 @@ export default {
    ** Headers of the page
    */
   head: {
+    htmlAttrs: {
+      prefix: 'og: http://ogp.me/ns#'
+    },
     title: '佐々木優太のポートフォリオ',
     // titleTemplate: '%s | 佐々木優太の',
     meta: [
@@ -23,6 +26,14 @@ export default {
         name: 'description',
         content:
           '佐々木優太と申します。普段はこんなものが欲しいな… と自分が感じたものを土日の休みを使って開発しています。欲しいものはあるけれども技術的に未熟で実現できないことばかりなので、日々勉強中です。'
+      },
+      {
+        hid: 'keywords',
+        name: 'keywords',
+        content:
+          '佐々木優太,sasakiyuta,ポートフォリオ,portfolio,システムエンジニア',
+        'xml:lang': 'ja',
+        lang: 'ja'
       },
       { name: 'author', content: '佐々木優太' },
       // OGP
@@ -54,22 +65,22 @@ export default {
         content: 'https://sasakiportfolio-2c22c.firebaseapp.com/portfolio.png'
       },
       {
-        // hid: 'fb:app_id',
+        hid: 'fb:app_id',
         property: 'fb:app_id',
         content: '425218088280876'
       },
       {
-        // hid: 'twitter:card',
+        hid: 'twitter:card',
         property: 'twitter:card',
         content: 'summary'
       },
       {
-        // hid: 'twitter:site',
+        hid: 'twitter:site',
         property: 'twitter:site',
         content: 'https://sasakiportfolio-2c22c.firebaseapp.com/'
       },
       {
-        // hid: 'twitter:image',
+        hid: 'twitter:image',
         property: 'twitter:image',
         content: 'https://sasakiportfolio-2c22c.firebaseapp.com/portfolio.png'
       }
