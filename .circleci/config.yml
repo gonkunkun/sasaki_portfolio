@@ -10,11 +10,7 @@ jobs:
           command: npm install
       - run:
           name: lint check
-          command: mkdir -p ./reports npm eslint ./app/ --format junit --output-file ./reports/eslint.xml
-      - store_test_results:
-          path: ./reports
-      - store_artifacts:
-          path: ./reports
+          command: npm run install -g eslint
       - run:
           name: build
           command: npm run build
