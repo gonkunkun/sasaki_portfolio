@@ -12,7 +12,7 @@ jobs:
           name: lint check
           command: |
           mkdir -p ./reports
-          npx eslint ./app/ --format junit --output-file ./reports/eslint.xml
+          npm eslint ./app/ --format junit --output-file ./reports/eslint.xml
       - store_test_results:
           path: ./reports
       - store_artifacts:
