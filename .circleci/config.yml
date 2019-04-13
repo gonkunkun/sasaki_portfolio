@@ -1,6 +1,6 @@
 version: 2
 jobs:
-  deploy_mas: # ジョブ名
+  deploy_dev: # ジョブ名
     docker:
       - image: circleci/node:10.7 # ジョブ実行環境のDockerイメージを記述
     steps:
@@ -13,13 +13,13 @@ jobs:
           command: npm run build
       - run:
           name: deploy to Firebase Hosting
-          command: ./node_modules/.bin/firebase deploy --token=$FIREBASE_TOKEN --project sasaki-portfolio # プロジェクト上のfirebase-toolsでデプロイします
+          command: ./node_modules/.bin/firebase deploy --token=$FIREBASE_TOKEN --project sasaki-portfolio
 
 workflows:
   version: 2
   deploy_dev: # ワークフローの名前
     jobs:
-      - deploy_mas: # 上で定義したジョブを指定します
+      - deploy_dev: # 上で定義したジョブを指定します
           filters:
             branches:
               only: master # masterブランチのみを実行対象とします
