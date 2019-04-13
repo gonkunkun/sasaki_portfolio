@@ -9,6 +9,9 @@ jobs:
           name: npm install
           command: npm i
       - run:
+          name: install es lint
+          command: npm install -g eslint
+      - run:
           name: build
           command: npm run build
       - run:
