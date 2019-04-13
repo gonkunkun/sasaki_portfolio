@@ -26,29 +26,50 @@ export default {
       },
       { name: 'author', content: '佐々木優太' },
       // OGP
-      { property: 'og:site_name', content: '佐々木優太のポートフォリオ' },
-      { property: 'og:title', content: '佐々木優太のポートフォリオ' },
       {
+        hid: 'og:site_name',
+        property: 'og:site_name',
+        content: '佐々木優太のポートフォリオ'
+      },
+      {
+        hid: 'og:title',
+        property: 'og:title',
+        content: '佐々木優太のポートフォリオ'
+      },
+      {
+        hid: 'og:description',
         property: 'og:description',
         content:
           '佐々木優太と申します。普段はこんなものが欲しいな… と自分が感じたものを土日の休みを使って開発しています。欲しいものはあるけれども技術的に未熟で実現できないことばかりなので、日々勉強中です。'
       },
-      { property: 'og:type', content: 'website' },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
       {
+        hid: 'og:url',
         property: 'og:url',
         content: 'https://sasakiportfolio-2c22c.firebaseapp.com/'
       },
       {
+        hid: 'og:image',
         property: 'og:image',
         content: 'https://sasakiportfolio-2c22c.firebaseapp.com/portfolio.png'
       },
-      { property: 'fb:app_id', content: '425218088280876' },
-      { property: 'twitter:card', content: 'summary' },
       {
+        // hid: 'fb:app_id',
+        property: 'fb:app_id',
+        content: '425218088280876'
+      },
+      {
+        // hid: 'twitter:card',
+        property: 'twitter:card',
+        content: 'summary'
+      },
+      {
+        // hid: 'twitter:site',
         property: 'twitter:site',
         content: 'https://sasakiportfolio-2c22c.firebaseapp.com/'
       },
       {
+        // hid: 'twitter:image',
         property: 'twitter:image',
         content: 'https://sasakiportfolio-2c22c.firebaseapp.com/portfolio.png'
       }
