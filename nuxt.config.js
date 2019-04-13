@@ -30,7 +30,7 @@ export default {
       {
         hid: 'keywords',
         name: 'keywords',
-        content: '佐々木優太,ポートフォリオ,skill,works',
+        // content: '佐々木優太,ポートフォリオ,skill,works',
         'xml:lang': 'ja',
         lang: 'ja'
       },
