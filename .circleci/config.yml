@@ -9,9 +9,9 @@ jobs:
           name: update npm
           command: |
             cd ~
-            npm install npm@4
-            rm -rf /usr/local/lib/node_modules
-            mv node_modules /usr/local/lib/
+            sudo npm install npm@4
+            sudo rm -rf /usr/local/lib/node_modules
+            sudo mv node_modules /usr/local/lib/
       - run:
           name: 'Install Dependecies'
           command: npm install --save-dev firebase-tools
