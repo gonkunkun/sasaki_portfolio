@@ -9,11 +9,12 @@ jobs:
           name: npm install
           command: npm install
       - run:
-          name: install es lint
-          command: sudo npm install -g eslint
-      - run:
-          name: install es lint promise
-          command: sudo npm install eslint-plugin-promise@latest --save-dev
+          name: lint
+          command: |
+            mkdir -p /tmp/test-reports/eslint
+            node_modules/.bin/eslint . --format junit --output-file /tmp/test-reports/eslint/results.xml
+      - store_test_results:
+          path: /tmp/test-reports
       - run:
           name: build
           command: npm run build
