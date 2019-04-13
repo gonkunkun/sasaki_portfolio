@@ -10,7 +10,7 @@ jobs:
           command: sudo npm install
       - run:
           name: lint check
-          command: sudo npm install -g --save-dev eslint eslint-config-standard eslint-plugin-standard eslint-plugin-promise eslint-plugin-import eslint-plugin-node
+          command: sudo npm install --save-dev eslint eslint-config-standard eslint-plugin-standard eslint-plugin-promise eslint-plugin-import eslint-plugin-node
       - run:
           name: build
           command: sudo npm run build
