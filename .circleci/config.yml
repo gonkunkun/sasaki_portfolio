@@ -9,9 +9,6 @@ jobs:
       - run: # 順に実行したいコマンドとコマンドに名前をつけます
           name: npm install
           command: npm install
-      - run: # 順に実行したいコマンドとコマンドに名前をつけます
-          name: npm update
-          command: npm update
       - run:
           name: 'Install Dependecies'
           command: npm install --save-dev firebase-tools
@@ -22,10 +19,12 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-
       - run:
           name: 'Build Client Code'
           command: npm run build
+      - run: # 順に実行したいコマンドとコマンドに名前をつけます
+          name: npm install
+          command: npm install
       - run:
           name: deploy to Firebase Hosting
           command: ./node_modules/.bin/firebase deploy --token=$FIREBASE_TOKEN --project sasaki-portfolio
