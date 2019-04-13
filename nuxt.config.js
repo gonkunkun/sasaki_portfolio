@@ -11,7 +11,7 @@ export default {
     htmlAttrs: {
       prefix: 'og: http://ogp.me/ns#'
     },
-    title: '佐々木優太のポートフォリオ',
+    title: "佐々木優太のポートフォリオ | Yuta's Portfolio",
     // titleTemplate: '%s | 佐々木優太の',
     meta: [
       { charset: 'utf-8' },

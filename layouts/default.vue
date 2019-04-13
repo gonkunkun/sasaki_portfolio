@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <default-sidebar/>
+    <!-- <default-sidebar/> -->
     <default-header/>
     <nuxt/>
     <!-- <default-right-drawer /> -->
