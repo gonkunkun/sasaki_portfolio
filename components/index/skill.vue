@@ -59,7 +59,7 @@
                   <i class="fab fa-vuejs fa-5x"></i>
                 </v-flex>
                 <v-flex xs6>
-                  <img class="icon-img" src="~/assets/nuxt.svg">
+                  <img class="icon-img" alt="Nuxtロゴ" src="~/assets/nuxt.svg">
                 </v-flex>
               </v-layout>
             </v-flex>
@@ -126,7 +126,7 @@
             <v-flex xs10 offset-xs1>
               <v-layout align-center justify-center row wrap>
                 <v-flex xs12>
-                  <img class="icon-img" src="~/assets/ruby-on-rails.svg">
+                  <img class="icon-img" alt="Rubyロゴ" src="~/assets/ruby-on-rails.svg">
                 </v-flex>
               </v-layout>
             </v-flex>
@@ -162,7 +162,7 @@
             <v-flex xs10 offset-xs1>
               <v-layout align-center justify-center row wrap>
                 <v-flex xs12>
-                  <img class="icon-img" src="~/assets/logstash.svg">
+                  <img class="icon-img" alt="Logstashロゴ" src="~/assets/logstash.svg">
                 </v-flex>
               </v-layout>
             </v-flex>
@@ -178,7 +178,7 @@
             <v-flex xs10 offset-xs1>
               <v-layout align-center justify-center row wrap>
                 <v-flex xs12>
-                  <img class="icon-img" src="~/assets/elasticsearch.svg">
+                  <img class="icon-img" alt="Elasticsearchロゴ" src="~/assets/elasticsearch.svg">
                 </v-flex>
               </v-layout>
             </v-flex>
@@ -194,7 +194,7 @@
             <v-flex xs10 offset-xs1>
               <v-layout align-center justify-center row wrap>
                 <v-flex xs12>
-                  <img class="icon-img" src="~/assets/kibana.svg">
+                  <img class="icon-img" alt="Kibanaロゴ" src="~/assets/kibana.svg">
                 </v-flex>
               </v-layout>
             </v-flex>
@@ -210,7 +210,7 @@
             <v-flex xs10 offset-xs1>
               <v-layout align-center justify-center row wrap>
                 <v-flex xs12>
-                  <img class="icon-img" src="~/assets/ansible.svg">
+                  <img class="icon-img" alt="ansibleロゴ" src="~/assets/ansible.svg">
                 </v-flex>
               </v-layout>
             </v-flex>

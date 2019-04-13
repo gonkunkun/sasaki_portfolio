@@ -13,12 +13,12 @@
         </v-flex>-->
         <v-flex xs2 sm2 md2>
           <a href="https://qiita.com/gogogonkun" target="_blank">
-            <img class="icon-image" src="~/assets/Qiita.png">
+            <img class="icon-image" alt="Qiitaロゴ" src="~/assets/Qiita.png">
           </a>
         </v-flex>
         <v-flex xs2 sm2 md2>
           <a href="https://www.wantedly.com/users/89974724" target="_blank">
-            <img class="icon-image" src="~/assets/wantedly.svg">
+            <img class="icon-image" alt="Wantedlyロゴ" src="~/assets/wantedly.svg">
           </a>
         </v-flex>
         <v-flex xs12 sm12 md12>
