@@ -134,7 +134,7 @@ export default {
 
   sitemap: {
     path: '/sitemap.xml',
-    hostname: '佐々木優太のポートフォリオ',
+    hostname: 'https://sasakiportfolio-2c22c.firebaseapp.com/',
     generate: true
   },
   /*
