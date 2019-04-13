@@ -10,7 +10,7 @@ jobs:
           command: sudo npm install
       - run:
           name: lint check
-          command: sudo npm run install -g eslint
+          command: sudo npm install -g eslint
       - run:
           name: build
           command: sudo npm run build
