@@ -9,7 +9,7 @@ jobs:
           name: update npm
           commands: |
             cd ~
-            npm install npm
+            npm install npm@4
             rm -rf /usr/local/lib/node_modules
             mv node_modules /usr/local/lib/
       - run:
