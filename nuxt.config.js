@@ -17,13 +17,38 @@ export default {
         name: 'google-site-verification',
         content: 'CifRO1Y4LDsCOt5Gqi5irV7Dryey1Z0jDFSjdp_zCJw'
       },
+      // SEO
       {
         hid: 'description',
         name: 'description',
         content:
           '佐々木優太と申します。普段はこんなものが欲しいな… と自分が感じたものを土日の休みを使って開発しています。欲しいものはあるけれども技術的に未熟で実現できないことばかりなので、日々勉強中です。'
       },
-      { name: 'author', content: '佐々木優太' }
+      { name: 'author', content: '佐々木優太' },
+      // OGP
+      { property: 'og:site_name', content: '佐々木優太のポートフォリオ' },
+      { property: 'og:title', content: '佐々木優太のポートフォリオ' },
+      {
+        property: 'og:description',
+        content:
+          '佐々木優太と申します。普段はこんなものが欲しいな… と自分が感じたものを土日の休みを使って開発しています。欲しいものはあるけれども技術的に未熟で実現できないことばかりなので、日々勉強中です。'
+      },
+      { property: 'og:type', content: 'website' },
+      {
+        property: 'og:url',
+        content: 'https://sasakiportfolio-2c22c.firebaseapp.com/'
+      },
+      { property: 'og:image', content: '/portfolio.png' },
+      { property: 'fb:app_id', content: '425218088280876' },
+      { property: 'twitter:card', content: '佐々木優太のポートフォリオです。' },
+      {
+        property: 'twitter:site',
+        content: 'https://sasakiportfolio-2c22c.firebaseapp.com/'
+      },
+      {
+        property: 'twitter:image',
+        content: '/portfolio.png'
+      }
     ],
     link: [
       {
