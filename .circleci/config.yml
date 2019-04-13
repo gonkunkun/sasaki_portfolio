@@ -1,28 +1,30 @@
 version: 2
 jobs:
-  deploy_dev: # ジョブ名
+  build:
     docker:
-      - image: circleci/node:10.7 # ジョブ実行環境のDockerイメージを記述
+      - image: circleci/node:8.11.3
     steps:
-      - checkout # ソースコードのチェックアウト
-      - run: # 順に実行したいコマンドとコマンドに名前をつけます
-          name: npm install
-          command: sudo npm install
+      - restore_cache:
+          keys:
+            - source-v1-{{ .Branch }}-{{ .Revision }}
+            - source-v1-{{ .Branch }}-
+            - source-v1-
+      - checkout
+      - save_cache:
+          key: source-v1-{{ .Branch }}-{{ .Revision }}
+          paths:
+            - .git
+      - restore_cache:
+          key: v1-npm-deps-{{ checksum "package.json" }}
+      - run: npm install
+      - save_cache:
+          key: v1-npm-deps-{{ checksum "package.json" }}
+          paths:
+            - node_modules
       - run:
-          name: lint check
-          command: sudo npm install --save-dev eslint eslint-config-standard eslint-plugin-standard eslint-plugin-promise eslint-plugin-import eslint-plugin-node
-      - run:
-          name: build
-          command: sudo npm run build
-      - run:
-          name: sudo deploy to Firebase Hosting
-          command: sudo ./node_modules/.bin/firebase deploy --token=$FIREBASE_TOKEN --project sasaki-portfolio
-
-workflows:
-  version: 2
-  deploy_dev: # ワークフローの名前
-    jobs:
-      - deploy_dev: # 上で定義したジョブを指定します
-          filters:
-            branches:
-              only: master # masterブランチのみを実行対象とします
+          name: lint
+          command: |
+            mkdir -p /tmp/test-reports/eslint
+            node_modules/.bin/eslint . --format junit --output-file /tmp/test-reports/eslint/results.xml
+      - store_test_results:
+          path: /tmp/test-reports
