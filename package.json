@@ -9,7 +9,6 @@
     "build": "nuxt build --no-lock",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "i-lint": "npm install lint",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint"
   },

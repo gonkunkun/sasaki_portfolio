@@ -7,13 +7,22 @@ jobs:
       - checkout # ソースコードのチェックアウト
       - run: # 順に実行したいコマンドとコマンドに名前をつけます
           name: npm install
-          command: sudo npm install
+          command: pm install
       - run:
-          name: build
-          command: sudo npm run build
+          name: 'Install Dependecies'
+          command: npm install --save-dev firebase-tools
+
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
+
       - run:
-          name: sudo deploy to Firebase Hosting
-          command: sudo ./node_modules/.bin/firebase deploy --token=$FIREBASE_TOKEN --project sasaki-portfolio
+          name: 'Build Client Code(react-scripts によるビルド実行)'
+          command: npm run build
+      - run:
+          name: deploy to Firebase Hosting
+          command: ./node_modules/.bin/firebase deploy --token=$FIREBASE_TOKEN --project sasaki-portfolio
 
 workflows:
   version: 2
