@@ -7,9 +7,9 @@
     <v-container fluid class="py-1">
       <v-card class="pa-1">
         <v-flex xs12 class="mb-1">
-          <h4 class="headline font-weight-black">
+          <h3 class="headline font-weight-black">
             <v-icon x-large class="mr-1">desktop_mac</v-icon>Front-end
-          </h4>
+          </h3>
         </v-flex>
         <v-layout
           class="pb-2"
@@ -79,10 +79,10 @@
     <v-container fluid class="py-1">
       <v-card class="pa-1">
         <v-layout row wrap align-center justify-start fill-height>
-          <h4 class="headline">
+          <h3 class="headline">
             <i class="fas fa-server fa-fw fa-lg"/>
-          </h4>
-          <h4 class="headline font-weight-black pt-3">Back-end</h4>
+          </h3>
+          <h3 class="headline font-weight-black pt-3">Back-end</h3>
         </v-layout>
         <v-layout
           class="pb-2"
@@ -146,9 +146,9 @@
     <v-container fluid class="py-1">
       <v-card class="pa-1">
         <v-flex xs12 class="mb-1">
-          <h4 class="headline font-weight-black">
+          <h3 class="headline font-weight-black">
             <v-icon x-large class="mr-1">brightness_high</v-icon>DevOps
-          </h4>
+          </h3>
         </v-flex>
         <v-layout
           class="pb-2"
