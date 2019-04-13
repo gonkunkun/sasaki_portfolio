@@ -30,8 +30,7 @@ export default {
       {
         hid: 'keywords',
         name: 'keywords',
-        content:
-          '佐々木優太,sasakiyuta,ポートフォリオ,portfolio,システムエンジニア',
+        content: '佐々木優太,ポートフォリオ,skill,works',
         'xml:lang': 'ja',
         lang: 'ja'
       },
@@ -129,8 +128,15 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
     '@nuxtjs/vuetify',
-    '@nuxtjs/font-awesome'
+    '@nuxtjs/font-awesome',
+    '@nuxtjs/sitemap'
   ],
+
+  sitemap: {
+    path: '/sitemap.xml',
+    hostname: '佐々木優太のポートフォリオ',
+    generate: true
+  },
   /*
    ** Axios module configuration
    */
