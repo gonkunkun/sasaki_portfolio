@@ -1,10 +1,10 @@
 <template>
   <v-app>
     <!-- <default-sidebar/> -->
-    <default-header/>
-    <nuxt/>
+    <default-header />
+    <nuxt />
     <!-- <default-right-drawer /> -->
-    <default-footer/>
+    <default-footer />
   </v-app>
 </template>
 
@@ -14,7 +14,7 @@ import DefaultFooter from '~/components/layouts/footer'
 import DefaultSidebar from '~/components/layouts/sidebar'
 import DefaultRightDrawer from '~/components/layouts/rightDrawer'
 export default {
-  name: 'default',
+  name: 'Default',
   components: {
     DefaultHeader,
     DefaultFooter,

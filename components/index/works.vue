@@ -1,14 +1,14 @@
 <template>
   <div id="works" class="works mb-5">
     <h2>
-      <my-title :title="title" :icon="icon"/>
+      <my-title :title="title" :icon="icon" />
     </h2>
 
     <v-layout row wrap align-center justify-space-around fill-height>
       <div class="card-group">
         <ul class="pa-0">
           <li v-for="item in items" :key="item.title">
-            <card :item="item"/>
+            <card :item="item" />
           </li>
         </ul>
       </div>
@@ -21,7 +21,7 @@ import MyTitle from '~/components/Title.vue'
 import Card from '~/components/Card.vue'
 
 export default {
-  name: 'works',
+  name: 'Works',
   components: {
     MyTitle,
     Card
@@ -58,9 +58,9 @@ export default {
             '大学の研究で開発していました。水稲栽培の支援のために、気象予測情報から地域毎の危険度を算出し、GoogleMap上で可視化しております。新潟県の農業研究者/普及員約50名程度が活用し、高温被害の軽減に役立てました。',
           links: [
             // {
-            // color: 'blue darken-1',
-            // title: 'サイト',
-            // url: 'http://map32.wat.soft.iwate-pu.ac.jp/amateras/main.php'
+            // Color: 'blue darken-1',
+            // Title: 'サイト',
+            // Url: 'http://map32.wat.soft.iwate-pu.ac.jp/amateras/main.php'
             // },
             {
               color: 'blue darken-1',

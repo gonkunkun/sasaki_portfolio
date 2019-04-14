@@ -26,7 +26,8 @@
                 :color="tag.color"
                 :text-color="tag.textColor"
                 class="mx-1 pa-0"
-              >{{ tag.title }}</v-chip>
+                >{{ tag.title }}</v-chip
+              >
             </v-flex>
           </v-layout>
           <v-divider light></v-divider>
@@ -45,7 +46,8 @@
               class="mx-1 pa-1 ma-1"
               :href="link.url"
               target="_blank"
-            >{{ link.title }}</v-btn>
+              >{{ link.title }}</v-btn
+            >
           </v-flex>
         </v-layout>
       </v-card-actions>

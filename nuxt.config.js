@@ -5,14 +5,14 @@ export default {
   mode: 'spa',
 
   /*
-   ** Headers of the page
+   * * Headers of the page
    */
   head: {
     htmlAttrs: {
       prefix: 'og: http://ogp.me/ns#'
     },
     title: "佐々木優太のポートフォリオ | Yuta's Portfolio",
-    // titleTemplate: '%s | 佐々木優太の',
+    // TitleTemplate: '%s | 佐々木優太の',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -30,7 +30,7 @@ export default {
       {
         hid: 'keywords',
         name: 'keywords',
-        // content: '佐々木優太,ポートフォリオ,skill,works',
+        // Content: '佐々木優太,ポートフォリオ,skill,works',
         'xml:lang': 'ja',
         lang: 'ja'
       },
@@ -94,12 +94,12 @@ export default {
   },
 
   /*
-   ** Customize the progress-bar color
+   * * Customize the progress-bar color
    */
   loading: { color: '#fff' },
 
   /*
-   ** Global CSS
+   * * Global CSS
    */
   css: [
     '~/assets/style/app.styl',
@@ -111,7 +111,7 @@ export default {
   ],
 
   /*
-   ** Plugins to load before mounting the App
+   * * Plugins to load before mounting the App
    */
   plugins: [
     '@/plugins/vuetify',
@@ -122,7 +122,7 @@ export default {
   ],
 
   /*
-   ** Nuxt.js modules
+   * * Nuxt.js modules
    */
   modules: [
     '@nuxtjs/axios',
@@ -138,14 +138,14 @@ export default {
     generate: true
   },
   /*
-   ** Axios module configuration
+   * * Axios module configuration
    */
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
   },
 
   /*
-   ** Build configuration
+   * * Build configuration
    */
   build: {
     transpile: ['vuetify/lib'],
@@ -156,7 +156,7 @@ export default {
       }
     },
     /*
-     ** You can extend webpack config here
+     * * You can extend webpack config here
      */
     extend(config, ctx) {
       // Run ESLint on save
