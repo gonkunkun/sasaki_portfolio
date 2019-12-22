@@ -305,13 +305,11 @@
 
 <script>
 import MyTitle from '~/components/Title.vue'
-import CardSkl from '~/components/CardSkl.vue'
 
 export default {
   name: 'Skill',
   components: {
-    MyTitle,
-    CardSkl
+    MyTitle
   },
   data() {
     return {

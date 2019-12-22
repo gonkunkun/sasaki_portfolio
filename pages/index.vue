@@ -10,7 +10,6 @@
 </template>
 
 <script>
-import MyTitle from '~/components/Title.vue'
 import AboutMe from '~/components/index/aboutMe.vue'
 import Skill from '~/components/index/skill.vue'
 import Works from '~/components/index/works.vue'
@@ -18,7 +17,6 @@ import Contact from '~/components/index/contact.vue'
 
 export default {
   components: {
-    MyTitle,
     AboutMe,
     Skill,
     Works,

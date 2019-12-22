@@ -11,15 +11,11 @@
 <script>
 import DefaultHeader from '~/components/layouts/header'
 import DefaultFooter from '~/components/layouts/footer'
-import DefaultSidebar from '~/components/layouts/sidebar'
-import DefaultRightDrawer from '~/components/layouts/rightDrawer'
 export default {
   name: 'Default',
   components: {
     DefaultHeader,
-    DefaultFooter,
-    DefaultSidebar,
-    DefaultRightDrawer
+    DefaultFooter
   },
   data() {
     return {}

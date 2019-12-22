@@ -223,6 +223,44 @@ export default {
               url: 'https://github.com/tachibanayu24/py_slash_tinps'
             }
           ]
+        },
+        {
+          src: '準備中',
+          alt: '情報検索サイト（Sopick）',
+          overview: '',
+          title: '各県店舗のキャストを写メ日記から検索できるアプリ',
+          date: '2019/12/01',
+          tags: [
+            {
+              color: 'green',
+              textColor: 'white',
+              title: '開発'
+            },
+            {
+              color: 'orange',
+              textColor: 'white',
+              title: 'Nuxt'
+            },
+            {
+              color: 'orange',
+              textColor: 'white',
+              title: 'Rails'
+            },
+            {
+              color: 'orange',
+              textColor: 'white',
+              title: 'MySQL'
+            }
+          ],
+          text:
+            'Nuxt、Railsのアプリです。現在進行中で開発しています。夜遊びのお供として、各地域のキャストを日記画像つきで検索できるサービスです。夜遊び先を探す際に、1.店舗決め→2.人選び→3.日記探し という3ステップに煩わしさを感じ、作成しました。',
+          links: [
+            {
+              color: 'blue darken-1',
+              title: 'GitHub',
+              url: 'https://github.com/gonkunkun/sopick'
+            }
+          ]
         }
       ]
     }
