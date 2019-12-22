@@ -225,7 +225,7 @@ export default {
           ]
         },
         {
-          src: '準備中',
+          src: '/sopick.jpeg',
           alt: '情報検索サイト（Sopick）',
           overview: '',
           title: '各県店舗のキャストを写メ日記から検索できるアプリ',
