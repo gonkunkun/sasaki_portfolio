@@ -106,22 +106,22 @@ export default {
           text:
             '初めてのChrome拡張開発です。動画の閲覧履歴をサムネ付きで確認できます。現在、60名程度のユーザに利用されています。',
           links: [
-            {
-              color: 'blue darken-1',
-              title: 'ストア',
-              url:
-                'https://chrome.google.com/webstore/detail/gbidhnbjoleffagedagblicnjlknibpd/publish-accepted?hl=ja'
-            },
-            {
-              color: 'blue darken-1',
-              title: 'Qiita',
-              url: 'https://qiita.com/gogogonkun/items/c34971ce743c54c5a240'
-            },
-            {
-              color: 'blue darken-1',
-              title: 'GitHub',
-              url: 'https://github.com/gonkunkun/MovieBrowsHistoryViewer'
-            }
+            // {
+            //   color: 'blue darken-1',
+            //   title: 'ストア',
+            //   url:
+            //     'https://chrome.google.com/webstore/detail/gbidhnbjoleffagedagblicnjlknibpd/publish-accepted?hl=ja'
+            // },
+            // {
+            //   color: 'blue darken-1',
+            //   title: 'Qiita',
+            //   url: 'https://qiita.com/gogogonkun/items/c34971ce743c54c5a240'
+            // },
+            // {
+            //   color: 'blue darken-1',
+            //   title: 'GitHub',
+            //   url: 'https://github.com/gonkunkun/MovieBrowsHistoryViewer'
+            // }
           ]
         },
         {
