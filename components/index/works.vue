@@ -76,7 +76,7 @@ export default {
           ]
         },
         {
-          src: '/movhis.png',
+          src: '/movhis.jpeg',
           alt: '動画の閲覧履歴をサムネイル付きで表示するアプリ',
           overview: '',
           title: 'Chrome拡張機能 動画閲覧履歴Viewerの開発',
@@ -253,7 +253,7 @@ export default {
             }
           ],
           text:
-            'Nuxt・Railsのアプリです。現在進行中で開発しています。日記を画像つきで検索できるサービスです。',
+            'Nuxt・Railsのアプリです。日記を画像つきで検索できるサービスです。',
           links: [
             {
               color: 'blue darken-1',
